@@ -2,6 +2,47 @@
     margin: 0 0 0 0;
     font-family:Verdana;
 }
+@media screen and (min-width: 769px) {
+    .onleft h1{
+        color: white;
+        font-weight: 750;
+        font-size: 28px;
+    }
+    .onleft p{
+        margin-top: 5px;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .onleft h1{
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .onleft p{
+        margin-top: 5px;
+        color: white;
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .onleft h1{
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .onleft p{
+        margin-top: 2px;
+        color: white;
+        font-weight: 400;
+        font-size: 9px;
+    }
+}
 .container{
     display: flex;
     height: 40rem;
@@ -34,17 +75,7 @@
     border-radius: 50px;
     padding: 20px;
 }
-.onleft h1{
-    color: white;
-    font-weight: 750;
-    font-size: 30px;
-}
-.onleft p{
-    margin-top: 5px;
-    color: white;
-    font-weight: 400;
-    font-size: 17px;
-}
+
 
 .onright{
     display: flex;
