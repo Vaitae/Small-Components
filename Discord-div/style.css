@@ -51,7 +51,7 @@
     height: 42rem;
     width: 100%;
     /*background-image:linear-gradient(rgb(25,23,92),#5865f2);*/
-    background-image:linear-gradient(to left,rgb(00,00,00),#1f1f1f);;
+    background-image:linear-gradient(to left,rgb(00,00,00),#1f1f1f);
     justify-content: center;
     align-items: center;
 }
@@ -80,7 +80,6 @@
     border-radius: 50px;
     padding: 20px;
 }
-
 
 .onright{
     display: flex;
