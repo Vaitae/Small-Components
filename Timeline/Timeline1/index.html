@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>Timeline</title>
+        <style> 
+            .main-container{ 
+                position: relative; 
+                width: 500px; 
+            } 
+            /*creating line for timeline*/
+            .main-container::after{ 
+                content: ''; 
+                position: absolute; 
+                width: 2px; 
+                background-color: #dad7d7; 
+                top:0; 
+                bottom: 0; 
+                left: 50%; 
+                margin-left: 1px; 
+            } 
+            /*Adjusting box of all content*/
+            .text-wrapper{ 
+                padding: 10px 40px; 
+                position: relative; 
+                width:51%; 
+                box-sizing: border-box; 
+                margin: 50px 0; 
+            } 
+            .text-wrapper::after{ 
+                content: ''; 
+                position: absolute; 
+                width: 25px; 
+                height: 5px; 
+                right: -10px; 
+                background-color:#535353; 
+                top:15px; 
+                border-radius: 5px;
+                z-index: 1; 
+            } 
+            /*for left events*/
+            .left{ 
+                left: 0; 
+            } 
+            /*for right events*/
+            .right{ 
+                left:50%; 
+            } 
+            .right::after{ 
+                left:-10px; 
+            } 
+            /*content box colour padding and radius for circular corner*/
+            .content{ 
+                width: 120px;
+                padding: 15px 35px 15px 35px; 
+                background-color: #fafafa; 
+                border:1px solid grey;
+                border-radius: 4px; 
+            } 
+            /*setting text property of event heading*/
+            .content h3{ 
+                text-transform: uppercase; 
+                font-size: 14px; 
+                color: #212121; 
+                letter-spacing:1px; 
+            } 
+            /*setting text property of event content*/
+            .content p{ 
+                color: #616161; 
+                font-weight: 300; 
+                font-size: 18px; 
+                margin-top: 2px; 
+            } 
+            </style> 
+            
+    </head>
+<body> 
+<!-- container which will contain our timeline -->
+	<div class="main-container"> 
+		<!-- event 1st of timeline -->
+		<div class="text-wrapper left"> 
+			<!-- all text content of timeline -->
+			<div class="content"> 
+				<h3>one</h3> 
+				<p>Some stuff</p> 
+			</div> 
+		</div> 
+		<!-- event 1st of timeline -->
+		<div class="text-wrapper right"> 
+			<!-- all text content of timeline -->
+			<div class="content"> 
+				<h3>two</h3> 
+				<p>Some stuff</p> 
+			</div> 
+		</div> 
+		<!-- event 1st of timeline -->
+		<div class="text-wrapper left"> 
+			<!-- all text content of timeline -->
+			<div class="content"> 
+				<h3>three</h3> 
+				<p>Some Stuff</p> 
+			</div> 
+		</div> 
+		<!-- event 1st of timeline -->
+		<div class="text-wrapper right"> 
+			<!-- all text content of timeline -->
+			<div class="content"> 
+				<h3>four</h3> 
+				<p>Some stuff</p> 
+			</div> 
+		</div> 
+	</div> 
+</body> 
+</html> 
